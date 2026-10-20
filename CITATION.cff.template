@@ -7,7 +7,7 @@ authors:
     given-names: "Abdulgafar"
 version: "1.0.0"
 date-released: "2026-10-19"
-repository-code: "https://github.com/[USERNAME]/[REPOSITORY]"
+repository-code: "https://github.com/Abdulgafar007/High-Frequency-WQ-Data-Correction-Algorithms"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.[TO-BE-ASSIGNED]"
