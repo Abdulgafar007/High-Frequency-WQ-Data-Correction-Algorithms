@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "high-frequency-wq-preprocessing"
+version = "0.1.0"
+description = "Reproducible preprocessing benchmark for high-frequency storm-event water-quality sensor data"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
