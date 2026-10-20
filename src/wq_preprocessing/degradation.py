@@ -25,10 +25,10 @@ def apply_block_missing(x: np.ndarray, severity: str, rng: np.random.Generator):
     mask = np.zeros(n, dtype=bool)
     if severity == "moderate":
         n_blocks = rng.integers(1, 5)      
-        len_low, len_high = 4, 9             
+        len_low, len_high = 4, 8             
     else:
         n_blocks = rng.integers(5, 11)       
-        len_low, len_high = 9, 16          
+        len_low, len_high = 9, 15          
     for _ in range(n_blocks):
         block_length = int(rng.integers(len_low, len_high))
         block_length = min(block_length, n)
