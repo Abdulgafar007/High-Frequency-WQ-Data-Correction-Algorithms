@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from scipy.ndimage import median_filter
 from scipy.signal import savgol_filter
-from .gap_filling import linear_fill, pchip_fill, kalman_local_level, ssa_denoise, match_length
+from .gap_filling import linear_fill, pchip_fill, kalman_local_level, ssa_denoise, match_length, _t
 
 try:
     from statsmodels.nonparametric.smoothers_lowess import lowess

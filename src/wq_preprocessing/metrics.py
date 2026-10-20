@@ -233,8 +233,6 @@ def usgs_accuracy_rating(parameter, y_true, y_pred):
         ratings[abs_error > fair_threshold] = "Poor"
 
     elif p in ["turbidity", "ntu"]:
-        percent_error = 100 * abs_error / np.abs(y_true)
-
         excellent_threshold = np.maximum(0.5, 0.05 * np.abs(y_true))
         good_threshold = np.maximum(1.0, 0.10 * np.abs(y_true))
         fair_threshold = np.maximum(1.5, 0.15 * np.abs(y_true))
