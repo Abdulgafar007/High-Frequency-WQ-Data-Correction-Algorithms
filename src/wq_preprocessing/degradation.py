@@ -24,11 +24,11 @@ def apply_block_missing(x: np.ndarray, severity: str, rng: np.random.Generator):
     n = len(x_deg)
     mask = np.zeros(n, dtype=bool)
     if severity == "moderate":
-        n_blocks = rng.integers(1, 5)        # 1 or 2 blocks
-        len_low, len_high = 4, 8             # block length in [3, 6]
+        n_blocks = rng.integers(1, 5)      
+        len_low, len_high = 4, 9             
     else:
-        n_blocks = rng.integers(5, 11)        # 2, 3, or 4 blocks
-        len_low, len_high = 9, 15            # block length in [6, 12]
+        n_blocks = rng.integers(5, 11)       
+        len_low, len_high = 9, 16          
     for _ in range(n_blocks):
         block_length = int(rng.integers(len_low, len_high))
         block_length = min(block_length, n)
